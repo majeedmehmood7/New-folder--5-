@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Document - Noor & Sons</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            background: white;
+            margin: 0 auto 20px auto; /* Added margin-bottom for gap between pages */
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            position: relative;
+        }
+        .page-break {
+            page-break-before: always;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+        .company-name {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .contact-info {
+            text-align: right;
+        }
+        .content {
+            min-height: calc(11in - 200px);
+        }
+        .footer {
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            margin-top: 20px;
+            font-size: 12px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            font-size: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        .address-boxes {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .client-address, .ship-address {
+            width: 45%;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-size: 14px;
+        }
+        /* Ensure gap in print */
+        @media print {
+            .page {
+                margin-bottom: 0;
+                page-break-after: always;
+            }
+            .page:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Page 1: Noor & Sons Introduction with Terms and Conditions -->
+    <div class="page" id="page1">
+        <div class="header" id="header1"></div>
+        <br>
+        <img src="Partner.png" alt="Noor & Sons Logo" style="height: 70px; width: 750px; display: block; margin: 0 auto;">
+        <br>
+        <div class="content">
+            <h1 style="font-size: 18px; text-align: center; margin-bottom: 10px;">ADVANCE IT - ALTERNATE POWER SOLUTIONS</h1>
+            <p style="font-size: 14px; text-align: center; margin-bottom: 20px;">
+                <br>
+                THURSDAY, FEBRUARY 06, 2025
+            </p>
+            <h2 style="font-size: 16px; margin-bottom: 10px;">SUBJECT: PROCUREMENT OF PS-12400 MODEL OF POWER SONIC USA BATTERY.</h2>
+            <p style="font-size: 12px; line-height: 1.5; margin-bottom: 20px;">
+                ALPHA TECHNOLOGIES GROUP IS THE WORLD LEADER IN OUTDOOR POWERING SOLUTION PRODUCTS WITH MORE THAN 37 YEARS OF POWER EXPERIENCE. WE SPECIALIZE IN DESIGN AND MANUFACTURE OF HIGHLY RELIABLE SYSTEMS FOR VOICE, VIDEO, AND DATA COMMUNICATION SYSTEMS WORLDWIDE. OUTBACK POWER TECHNOLOGIES IS THE LEADING DESIGNER AND MANUFACTURER OF ADVANCED POWER ELECTRONICS FOR RENEWABLE ENERGY, BACKUP POWER AND MOBILE APPLICATIONS.
+            </p>
+            <p style="font-size: 12px; line-height: 1.5; margin-bottom: 20px;">
+                POWER-SONIC HAS BEEN A LEADING FORCE IN THE GLOBAL BATTERY BUSINESS FOR OVER 43 YEARS; PS PRODUCTS ARE IQC, PQC, AND ISO 9001 QUALITY-COMPLIANT. OUR COMPANY HAS THRIVED DUE TO OUR COMMITMENT TO PROVIDE HIGH-QUALITY COST-EFFECTIVE BATTERIES, BACKED BY A LEVEL OF SERVICE THAT IS SECOND TO NONE. WE PRIDE OURSELVES ON OUR FLEXIBILITY AND ABILITY TO ACT QUICKLY IN BRINGING NEW INDUSTRY-LEADING PRODUCTS TO MARKET. WE PROUDLY HOLD ISO 9000 CERTIFICATION COVERING ALL ASPECTS OF OUR ORGANIZATION.
+            </p>
+            <p style="font-size: 12px; line-height: 1.5; margin-bottom: 20px;">
+                NOOR & SONS ARE THE ONLY AUTHORIZED SOLE DISTRIBUTOR IN PAKISTAN FOR POWER SONIC CORPORATION PRODUCTS AND AUTHORIZED DISTRIBUTOR IN PAKISTAN FOR OUTBACK USA PRODUCTS MADE IN THE USA.
+            </p>
+            <h3 style="font-size: 14px; margin-bottom: 10px;">KEY FEATURES:</h3>
+            <ul style="font-size: 12px; padding-left: 20px; margin-bottom: 20px;">
+                <li>Flame Retardant for safety and security</li>
+                <li>VDS AND NCP APPROVED VRLA BATTERY</li>
+                <li>GAS RECOMBINATION TECHNOLOGY</li>
+                <li>ABSORBENT GLASS MAT (AGM) TECHNOLOGY FOR SUPERIOR PERFORMANCE</li>
+                <li>VALVE REGULATED, SPILL PROOF CONSTRUCTION ALLOWS SAFE OPERATION IN ANY POSITION</li>
+                <li>POWER/VOLUME RATIO YIELDING UNRIVALED ENERGY DENSITY</li>
+                <li>RUGGED IMPACT RESISTANT ABS CASE AND COVER (UL94-HB)</li>
+                <li>APPROVED FOR TRANSPORT BY AIR. D.O.T., I.A.T.A., F.A.A. AND C.A.B. CERTIFIED</li>
+            </ul>
+            <h3 style="font-size: 14px; margin-bottom: 10px;">APPROVALS & CERTIFICATIONS:</h3>
+            <ul style="font-size: 12px; padding-left: 20px; margin-bottom: 20px;">
+                <li>APPROVED FOR TRANSPORT BY AIR. D.O.T., I.A.T.A., F.A.A. AND C.A.B. CERTIFIED</li>
+                <li>U.L. RECOGNIZED</li>
+                <li>ISO9001:2015 - QUALITY MANAGEMENT SYSTEMS</li>
+                <li>VDS</li>
+                <li>NCP</li>
+            </ul>
+            <h3 style="font-size: 14px; margin-bottom: 10px;">Terms and Conditions:</h3>
+            <ul style="font-size: 12px; padding-left: 20px; margin-bottom: 20px;">
+                <li>Delivery Period: Ex Stock or 12 – 18 weeks (tentative) after receiving Purchase order & Advance</li>
+                <li>Offer Validity: 15 days (subject to USD – PKR parity)</li>
+                <li>Payment Terms: 100% Advance upon order</li>
+                <li>Weight: 13.20 Kg</li>
+                <li>Manufactures Name/Origin: Power Sonic Corp. / USA</li>
+                <li>Make: China</li>
+                <li>Warranty for batteries: 12 Months from the date of delivery *see warranty terms</li>
+                <li>Battery Designed Life: 05 – 08 Years</li>
+                <li>Dimensions: L: 7.76 (197) W: 6.50 (165) H: 6.69 (170) HT: 6.69 (170)</li>
+            </ul>
+        </div>
+        <div class="footer" id="footer1"></div>
+    </div>
+
+    <!-- Page 2: Pricing Table for PS-12400 with Client and Ship Address Boxes -->
+    <div class="page page-break" id="page2">
+        <div class="header" id="header2"></div>
+        <div class="content">
+            <h1 style="font-size: 18px; text-align: center; margin-bottom: 20px;">ADVANCE IT - ALTERNATE POWER SOLUTIONS</h1>
+            <!-- Client and Ship Address Boxes -->
+            <div class="address-boxes">
+                <div class="client-address">
+                    <h3 style="margin: 0 0 10px; font-size: 16px;">CLIENT ADDRESS</h3>
+                    REF. #: ZK-060225-1A1/PS/40
+                    MR. UMESH PARMANI<br>
+                    INDUS TECHNOLOGIES<br>
+                    CELL: +9223002716829
+                </div>
+                <div class="ship-address">
+                    <h3 style="margin: 0 0 10px; font-size: 16px;">SHIP TO</h3>
+                    B-65, BLOCK-17 MUMTAZ<br>
+                    GULSHAN-E-IQBAL AREA KARACHI<br>
+                    CELL: +9223002716829
+                </div>
+            </div>
+            <p style="font-size: 12px; margin-bottom: 20px;">
+                This refers to our conversation and the aforesaid subject, we are pleased to quote prices for Power Sonic batteries, following are the final negotiated prices (in Pak Rupees) after special discounts for kind perusal:
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>SR. #</th>
+                        <th>Model</th>
+                        <th>Rating</th>
+                        <th>Unit Price Exc. Tax</th>
+                        <th>GST/Unit</th>
+                        <th>Qty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>PS-12400</td>
+                        <td>12V 40AH</td>
+                        <td>PKR 31,876.00</td>
+                        <td>PKR 5,737.68</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Total GST Amount</td>
+                        <td colspan="3">PKR 5,737.68</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Amount without GST</td>
+                        <td colspan="3">PKR 31,876.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Total Amount</td>
+                        <td colspan="3">PKR 37,613.68</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-size: 12px; margin-bottom: 10px;">
+                * GST will be applicable at 18% and in case of unregistered/inactive GST will be charged at 24% or as per law.<br>
+                * Being the importer the WHT will not be deducted; exemption will be provided at the time of order.<br>
+                * All GST/TAX exemption claims must be validated through the IRS - FBR portal following the pertinent SRO issued by the FBR to the issuing party of the Purchase Order. No alternative documentation or claims or irrelevant documentation shall be deemed valid under the laws administered by the FBR - Federal Board of Revenue.
+            </p>
+            <p style="font-size: 12px; font-weight: bold; margin-bottom: 10px;">
+                SPECIAL FLAME-RETARDANT CASE FOR ENHANCED SAFETY AND SECURITY - OPTIONAL
+            </p>
+            <p style="font-size: 12px; margin-bottom: 10px;">
+                <strong>Note:</strong> Batteries warranty does not cover damage or defect caused by misuse, improper application, wrong or inadequate electrical current/voltage/frequency, inadequate connections, inadequate water or drain services, user negligence, repair by non-technical designated personnel, accident during relocation, tampering, alterations, a change in BATTERY location or application, exposure to the elements, theft, sabotage, installation contrary to recommendations or specifications and if serial numbers have been altered, defaced, or removed. Above prices are only for batteries.
+            </p>
+            <p style="font-size: 12px; margin-bottom: 10px;">
+                <strong>Cycle Applications:</strong> Limit initial current to 12A. Charge until battery voltage (under charge) reaches 14.4 to 14.7 volts at 68°F (20°C). Hold at 14.4 to 14.7 volts until current drops to under 400mA. Battery is fully charged under these conditions, and charger should be disconnected or switched to “float” voltage.
+            </p>
+            <p style="font-size: 12px; margin-bottom: 10px;">
+                <strong>“Float” or “Stand-By” Service:</strong> Hold battery across constant voltage source of 13.5 to 13.8 volts continuously. When held at this voltage, the battery will seek its own current level and maintain itself in a fully charged condition.
+            </p>
+        </div>
+        <div class="footer" id="footer2"></div>
+    </div>
+
+    <!-- Page 3: Warranty -->
+    <div class="page page-break" id="page3">
+        <div class="header" id="header3"></div>
+        <div class="content">
+            <div class="warranty" style="font-size: 12px;">
+                <h2 style="font-size: 16px; margin-bottom: 20px;">POWER SONIC CORP. USA PRODUCTS LIMITED WARRANTY</h2>
+                <p style="line-height: 1.5; margin-bottom: 20px;">
+                    Power-Sonic Corporation warrants its valve regulated lead acid batteries for UPS applications against defective workmanship and materials for one (1) year from the date the battery was put in service or for the full period plus six months from the date of manufacture based on date code.
+                </p>
+                <h3 style="margin: 0 0 10px; font-size: 14px;">CONDITIONS:</h3>
+                <ul style="padding-left: 20px; margin-bottom: 20px;">
+                    <li style="margin-bottom: 10px;">The warranty is invalid if the battery has been subject to misuse, abuse, or physical damage. The batteries are subject to IEEE Standard 1188 Acceptance Test at time of installation. If they do not meet both, or either, the standards and the published Power-Sonic specifications the company, Power-Sonic, must be notified immediately and the user should request further instructions. The warranty will be void if batteries are used on CCA – Cold Cranking Application with prior notice.</li>
+                    <li style="margin-bottom: 10px;">The warranty of battery will be reduced if used in CCA – Cold Cranking Application; maximum warranty duration 6 months. Deep discharging the batteries will deteriorate to defective if it falls to deliver less than 15% of its rated capacity during the warranty period.</li>
+                    <li style="margin-bottom: 10px;">The PS batteries selected by user must be of the correct size, design, and capacity for the intended application and in any case new batteries should not be mixed with old/other brand batteries. Failure to do this will invalidate the warranty.</li>
+                    <li style="margin-bottom: 10px;">The batteries should be installed and operated at a temperature not exceeding 77°F (25°C). The warranty period shall be reduced by 50% for operating temperatures in excess of 25°C above this limit.</li>
+                    <li style="margin-bottom: 10px;">The batteries should be paired with a suitable designated charger for sealed lead acid batteries. Incorrectcurtis selection of charger and/or failure to follow the correct charging regimen will void the warranty.</li>
+                    <li style="margin-bottom: 10px;">Battery annual maintenance records must be kept manually or electronically including load tests, temperature, Ohmic readings and voltage and made available as part of any warranty claim. The failure to keep such records will nullify the warranty.</li>
+                    <li style="margin-bottom: 10px;">Users are to make accessible the batteries under warranty to Power-Sonic or its authorized representative for inspection at reasonable hours and time intervals.</li>
+                    <li style="margin-bottom: 10px;">Warranty must be limited to five strings without the express written approval of Power-Sonic. The warranty shall be voided if the actions do not take place.</li>
+                    <li style="margin-bottom: 10px;">The warranty shall be voided if the battery becomes unserviceable due to: fire, freezing, abuse, neglect or any act of God.</li>
+                    <li style="margin-bottom: 10px;">Installation of the batteries must be performed by suitably qualified technicians and in accordance with proven acceptable practices or the warranty will be voided.</li>
+                    <li style="margin-bottom: 10px;">Disarming and moving batteries to a different location will void the warranty unless Power-Sonic is contacted and provides written consent of such action.</li>
+                    <li style="margin-bottom: 10px;">This warranty shall apply only to original purchasers in Pakistan.</li>
+                </ul>
+                <p style="color: red; font-weight: bold; margin-bottom: 20px;">
+                    Data + Event logs USA batteries requires in any scenario of warranty claim<br>
+                    Power Sonic USA batteries are mixed with different brand, batch or old batteries.<br>
+                    Warranty will be void if Power Sonic USA batteries are mixed with different brand, batch or old batteries.<br>
+                    No Claim would be processed without any Data + Event Logs<br>
+                    Noor Sons Engineer inspection is a must prior any warranty claim
+                </p>
+                <h3 style="margin: 0 0 10px; font-size: 14px;">CLAIMS:</h3>
+                <ul style="padding-left: 20px; margin-bottom: 20px;">
+                    <li style="margin-bottom: 10px;">Contact the original point of purchase for instructions.</li>
+                    <li style="margin-bottom: 10px;">Request return authorization. No returns will be credited without an authorization.</li>
+                    <li style="margin-bottom: 10px;">Cost of travel, installation, transportation shall be borne by the purchaser.</li>
+                    <li style="margin-bottom: 10px;">In case of De-shaped batteries warranty would be void by the purchaser.</li>
+                    <li style="margin-bottom: 10px;">Delivery time for replacement of approved warranty claim will remain applicable and freight charges or any taxes will be charged to customer.</li>
+                </ul>
+                <p style="line-height: 1.5;">
+                    The above warranty is in lieu of and not limited to all other remedies including negligence and breach of contract.
+                </p>
+            </div>
+        </div>
+        <div class="footer" id="footer3"></div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // Header function
+            function createHeader() {
+                return `
+                    <div class="company-name">
+                        <img src="Logo.jpeg" alt="Noor & Sons Logo" style="height: 70px; width: 100px;">
+                    </div>
+                    <div class="contact-info">
+                        Suite # 5/1, First floor Motiwalla Mansion, Shahrah e Liaquat, Karachi – Pakistan.<br>
+                        Tel: 021-32711356-7 | website: <a href="http://www.noorandsons.com.pk" style="color: blue; text-decoration: none;">www.noorandsons.com.pk</a> | email: <a href="mailto:sales@noorandsons.com.pk" style="color: blue; text-decoration: none;">sales@noorandsons.com.pk</a>
+                    </div>
+                `;
+            }
+
+            // Footer function
+            function createFooter() {
+                return `
+                    Thanks & Regards,<br>
+                    Zahid Khan | +92 21 32711356 – 7 | <a href="mailto:z.khan@noorandsons.com.pk" style="color: blue; text-decoration: none;">z.khan@noorandsons.com.pk</a> | <a href="http://www.noorandsons.com.pk" style="color: blue; text-decoration: none;">www.noorandsons.com.pk</a><br>
+                    Suite # 5/1, First floor Motiwalla Mansion, Shahrah e Liaquat, Karachi – Pakistan.<br>
+                    Tel: 021-32711356-7 | website: <a href="http://www.noorandsons.com.pk" style="color: blue; text-decoration: none;">www.noorandsons.com.pk</a> | email: <a href="mailto:sales@noorandsons.com.pk" style="color: blue; text-decoration: none;">sales@noorandsons.com.pk</a>
+                `;
+            }
+
+            // Apply header and footer to all pages
+            function applyHeaderAndFooter() {
+                $('.header').html(createHeader());
+                $('.footer').html(createFooter());
+            }
+
+            // Call the function once
+            applyHeaderAndFooter();
+
+            console.log("Header and Footer applied to all pages!");
+        });
+    </script>
+</body>
+</html>
